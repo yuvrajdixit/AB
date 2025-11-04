@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgb(241, 55, 185) 0%, white 100%);
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.App {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.countdown-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-width: 100px;
+}
+
+.time-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.time-box p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Birthday message */
+.birthday-message {
+  animation: fadeIn 1s ease;
+}
+
+.birthday-message h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.birthday-message p {
+  font-size: 1.3rem;
+  color: #ffe6e6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
